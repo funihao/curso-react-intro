@@ -5,9 +5,7 @@ function TodoCounter({ total, completed }) {
   let textCounter = "";
 
   if (totalCompleted) {
-    textCounter = (
-      <h1 className="todo__counter">Has COMPLETADO todas tus tareas</h1>
-    );
+    textCounter = <h1 className="todo__counter">No hay tareas pendientes</h1>;
   } else {
     textCounter = (
       <h1 className="todo__counter">

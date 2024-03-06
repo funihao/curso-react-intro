@@ -1,5 +1,5 @@
-import { CompletedIcon } from "./CompletedIcon";
-import { DeletedIcon } from "./DeletedIcon";
+import { CompletedIcon } from "../TodoIcon/CompletedIcon";
+import { DeletedIcon } from "../TodoIcon/DeletedIcon";
 import "./TodoItem.css";
 
 function TodoItem({ text, completed, onComplete, onDelete }) {
