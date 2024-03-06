@@ -1,0 +1,55 @@
+.icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  color: #ccc;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #999;
+}
+
+.icon__check {
+  position: absolute;
+  left: -12px;
+}
+.icon__check--active {
+  color: #4caf50;
+}
+
+.icon__delete {
+  position: absolute;
+  top: -12px;
+  right: 0;
+
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+
+.icon__svg {
+  width: 20px;
+  height: 20px;
+}
+
+.icon__delete:hover .icon__svg {
+  fill: red;
+  /* text-shadow: 2px 2px 4px rgb(88, 41, 41); */
+}
+
+.icon__delete:hover {
+  color: red;
+  border-color: red;
+  /* text-shadow: 2px 2px 4px rgb(88, 41, 41); */
+}
+
+.icon__check:hover {
+  /* text-shadow: 2px 2px 3px #325033; */
+  color: #4caf50;
+}
+
+.icon__check:hover .icon__svg {
+  fill: #4caf50;
+  /* text-shadow: 2px 2px 3px #325033; */
+}

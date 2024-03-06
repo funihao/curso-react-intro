@@ -1,0 +1,27 @@
+/* .todo__counter {
+  background-color: red;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem;
+  padding: 2rem;
+  width: 50%;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 6px darksalmon;
+} */
+
+.todo__counter {
+  font-size: 24px;
+  text-align: center;
+  margin: 24px;
+  padding: 48px;
+  font-weight: normal;
+  border: 1px solid #a09494;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px 6px #b99c93;
+}
+
+.todo__counter span {
+  font-weight: bold;
+}
