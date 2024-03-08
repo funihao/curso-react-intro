@@ -1,0 +1,74 @@
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  justify-items: center;
+  background-color: #e2e6f8;
+  padding: 30px;
+  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+  width: 90%;
+}
+
+.todo-form label {
+  text-shadow: 1px 1px 2px #03083a;
+  font-size: 2rem;
+}
+
+.todo-form textarea {
+  min-width: 50%;
+  min-height: 50%;
+  height: 4rem;
+  font-size: 1.2rem;
+  border: 1px #ccc;
+  box-shadow: 1px 1px 5px #999;
+  padding: 1.5rem;
+  margin: 2rem;
+}
+
+.todo-form textarea:focus-visible,
+button.todo-form__button.name--cancel:focus-visible,
+button.todo-form__button.name--add:focus-visible {
+  outline: 1px solid #5d1696;
+}
+
+.todo-form__button-container {
+  /* padding: 1rem; */
+  /* box-shadow: 1px 1px 2px #999; */
+  /* border: 1px solid #ccc; */
+  /* background-color: #eee; */
+  width: 52%;
+}
+
+button.todo-form__button.name--cancel {
+  background-color: #e2e6f8;
+  border: none;
+  color: #555;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 2rem;
+  min-width: 30%;
+  padding: 1rem;
+}
+
+button.todo-form__button.name--add {
+  background-color: #61dafa;
+  box-shadow: 1px 1px 4px #555;
+  border: 1px solid #61dafa;
+  border-radius: 0.5rem;
+  color: #ddd;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 2rem;
+  min-width: 30%;
+  padding: 1rem;
+}
+button.todo-form__button.name--add:hover {
+  color: white;
+}
+button.todo-form__button.name--cancel:hover {
+  color: #61dafa;
+  text-shadow: 1px 1px #999;
+}

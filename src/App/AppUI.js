@@ -10,6 +10,7 @@ import { TodosLoading } from "../TodosLoading";
 import { TodoContext } from "../TodoContext";
 import { useContext } from "react";
 import { Modal } from "../Modal";
+import { TodoForm } from "../TodoForm";
 
 function AppUI() {
   const {
@@ -51,7 +52,11 @@ function AppUI() {
 
       <CreateTodoButton setOpenModal={setOpenModal} />
 
-      {openModal && <Modal>La funcionalidad de crear Todos</Modal>}
+      {openModal && (
+        <Modal>
+          <TodoForm />
+        </Modal>
+      )}
     </>
   );
 }

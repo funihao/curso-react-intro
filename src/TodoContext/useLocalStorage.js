@@ -6,7 +6,6 @@ function useLocalStorage(itemName, initValue) {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    console.log("buscando datos ...");
     setTimeout(() => {
       try {
         const localStorageItem = localStorage.getItem(itemName);
