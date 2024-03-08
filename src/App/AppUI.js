@@ -7,25 +7,29 @@ import { TodosEmpty } from "../TodosEmpty";
 import { TodosError } from "../TodosError";
 import { TodosLoading } from "../TodosLoading";
 
-function AppUI({
-  completedTodos,
-  totalTodos,
-  searchValue,
-  setSearchValue,
-  searchedTodos,
-  completeTodo,
-  deleteTodo,
-  loading,
-  error,
-}) {
+import { TodoContext } from "../TodoContext";
+import { useContext } from "react";
+import { Modal } from "../Modal";
+
+function AppUI() {
+  const {
+    searchedTodos,
+    completeTodo,
+    deleteTodo,
+    loading,
+    error,
+    openModal,
+    setOpenModal,
+  } = useContext(TodoContext);
   return (
     <>
-      <TodoCounter completed={completedTodos} total={totalTodos} />
-      <TodoSearch searchValue={searchValue} setSearchValue={setSearchValue} />
+      <TodoCounter />
+      <TodoSearch />
 
       <TodoList>
         {loading && (
           <>
+            <TodosLoading />
             <TodosLoading />
             <TodosLoading />
             <TodosLoading />
@@ -45,7 +49,9 @@ function AppUI({
         ))}
       </TodoList>
 
-      <CreateTodoButton />
+      <CreateTodoButton setOpenModal={setOpenModal} />
+
+      {openModal && <Modal>La funcionalidad de crear Todos</Modal>}
     </>
   );
 }
